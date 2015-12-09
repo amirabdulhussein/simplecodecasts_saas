@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SimplecodecastsSaas</title>
+  <title>Dev Match</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -18,8 +18,19 @@
         <span class = "icon-bar"></span>
         <span class = "icon-bar"></span>
       </button>
-      <%= link_to 'SaaS', root_path, class: 'navbar-brand' %> <!--ruby code (erb file- allows embedded ruby in HTML)-->
-      <!--Equivalent would be <a class ="navbar-brand" href"/">Saas</a>   look at inspect element to see HTML-->
+      
+      <!-- %= link_to root_path, class: 'navbar-brand' do %>
+      <!--  <i class = "fa fa-users"></i>Dev Match-->
+      <!--% end %>-->
+      
+      <a class = "navbar-brand" href = "/">
+        <i class = "fa fa-users"></i>Dev Match
+      </a>
+      
+      <!--<i class = "fa fa-users navbar-brand"></i>  <!-- used just for font awesome -->
+      <!--# link_to 'Dev Match', root_path, class: 'navbar-brand'  <!--ruby code (erb file- allows embedded ruby in HTML)-->
+      <!--Equivalent would be <a class ="navbar-brand" href"/">Dev Match</a>   look at inspect element to see HTML-->
+      
     </div>
     
     <div class = "collapse navbar-collapse" id = "main-nav-collapse">
