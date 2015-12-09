@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  # use rake routes in the console
   
   get '/about' => 'pages#about'
   root 'pages#home'
